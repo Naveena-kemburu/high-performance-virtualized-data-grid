@@ -169,9 +169,12 @@ Expected performance metrics:
     └── transactions.json      # Generated dataset (after npm run generate-data)
 ```
 ## Screenshots
+
+### Screenshot 1:
+
 <img width="1901" height="856" alt="Screenshot 2026-02-21 212604" src="https://github.com/user-attachments/assets/e889df1f-ac40-41c2-9d21-2ceecbe5b224" />
 
-
+### Screenshot 2:
 
 <img width="1901" height="856" alt="Screenshot 2026-02-21 212922" src="https://github.com/user-attachments/assets/59cc60c9-994d-4eb2-b3c2-4ae93b0de843" />
 
