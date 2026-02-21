@@ -1,0 +1,223 @@
+.virtual-grid {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: white;
+}
+
+.grid-controls {
+  padding: 16px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-input {
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  min-width: 200px;
+}
+
+.filter-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.quick-filters {
+  display: flex;
+  gap: 8px;
+}
+
+.quick-filters button {
+  padding: 8px 16px;
+  border: 1px solid #ced4da;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.quick-filters button:hover {
+  background: #e9ecef;
+}
+
+.quick-filters button.active {
+  background: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+
+.filter-count {
+  margin-left: auto;
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.grid-header {
+  display: flex;
+  background: #343a40;
+  color: white;
+  border-bottom: 2px solid #212529;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-cell {
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  border-right: 1px solid #495057;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header-cell.pinned-column {
+  position: sticky;
+  left: 0;
+  z-index: 11;
+  background: #343a40;
+}
+
+.header-cell:nth-child(2).pinned-column {
+  left: 80px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-label {
+  cursor: pointer;
+  user-select: none;
+  flex: 1;
+}
+
+.header-label:hover {
+  color: #4CAF50;
+}
+
+.sort-indicator {
+  margin-left: 4px;
+  font-size: 12px;
+}
+
+.pin-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 4px;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.pin-button:hover {
+  opacity: 1;
+}
+
+.grid-scroll-container {
+  flex: 1;
+  overflow-y: scroll;
+  overflow-x: auto;
+  position: relative;
+  background: white;
+}
+
+.grid-sizer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  pointer-events: none;
+}
+
+.grid-row-window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  will-change: transform;
+}
+
+.grid-row {
+  display: flex;
+  height: 40px;
+  border-bottom: 1px solid #e9ecef;
+  transition: background-color 0.1s;
+}
+
+.grid-row:hover {
+  background: #f8f9fa;
+}
+
+.grid-row.selected {
+  background: #e3f2fd;
+}
+
+.grid-row.selected:hover {
+  background: #bbdefb;
+}
+
+.grid-cell {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #212529;
+  border-right: 1px solid #e9ecef;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.grid-cell.pinned-column {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: inherit;
+}
+
+.grid-row .grid-cell:nth-child(2).pinned-column {
+  left: 80px;
+}
+
+.grid-row.selected .grid-cell.pinned-column {
+  background: #e3f2fd;
+}
+
+.grid-row.selected:hover .grid-cell.pinned-column {
+  background: #bbdefb;
+}
+
+.grid-row:hover .grid-cell.pinned-column {
+  background: #f8f9fa;
+}
+
+.cell-input {
+  width: 100%;
+  padding: 4px 8px;
+  border: 2px solid #4CAF50;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.cell-input:focus {
+  outline: none;
+}
