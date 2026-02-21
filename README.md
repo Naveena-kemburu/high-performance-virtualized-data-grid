@@ -51,7 +51,7 @@ The core virtualization logic implements a windowing technique:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Naveena-kemburu/high-performance-virtualized-data-grid
+git clone https://github.com/Naveena-kemburu/high-performance-virtualized-data-grid.git
 cd high-performance-virtualized-data-grid
 
 # Generate the 1M row dataset
