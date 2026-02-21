@@ -1,4 +1,4 @@
-# Application Status - RUNNING ✅
+# Application Status - RUNNING 
 
 ## Current Status
 
